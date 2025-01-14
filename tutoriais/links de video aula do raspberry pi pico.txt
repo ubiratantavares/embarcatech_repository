@@ -1,0 +1,186 @@
+https://youtu.be/LrksFNUrW3g
+
+
+FreeRTOS on Raspberry PI Pico
+por Dr Jon EA Ltd
+
+Using FreeRTOS on Raspberry PI Pico
+https://youtu.be/8afRBV_35Q0?list=PLspDyukWAtRUsBERob2MD6axJWVHjRpQZ
+
+FreeRTOS on Raspberry PI Pico - Course Announcement
+https://youtu.be/CDjl3QGqMH8?list=PLspDyukWAtRUsBERob2MD6axJWVHjRpQZ
+
+28BYJ-48 Stepper Motor with Raspberry PI Pico (C++ and FreeRTOS)
+https://youtu.be/VM3S9CiyPzY?list=PLspDyukWAtRUsBERob2MD6axJWVHjRpQZ
+
+SNTP on Raspberry PI Pico-W with LWIP and FreeRTOS
+https://youtu.be/Xv8yHjFRB08?list=PLspDyukWAtRUsBERob2MD6axJWVHjRpQZ
+
+FreeRTOS Kernel SMP for the Raspberry PI Pico
+https://youtu.be/nD8XeWjn-2w?list=PLspDyukWAtRUsBERob2MD6axJWVHjRpQZ
+
+FreeRTOS: Talking Pico to Pico
+https://youtu.be/vVVphE1ycpc?list=PLspDyukWAtRUsBERob2MD6axJWVHjRpQZ
+
+C++ and FreeRTOS Heap, on Raspberry Pi Pico
+https://youtu.be/N3-Pz2H3n10?list=PLspDyukWAtRUsBERob2MD6axJWVHjRpQZ
+
+Analysing FreeRTOS Stack Size on Raspberry PI Pico
+https://youtu.be/OlfNhZC3FKg?list=PLspDyukWAtRUsBERob2MD6axJWVHjRpQZ
+
+Analysing FreeRTOS Heap Size on Raspberry PI Pico
+https://youtu.be/gqBbGQuZ6ZQ?list=PLspDyukWAtRUsBERob2MD6axJWVHjRpQZ
+
+Halloween and Bonfire Night Project with Raspberry Pi Pico
+https://youtu.be/6bMbFZNSxwA?list=PLspDyukWAtRUsBERob2MD6axJWVHjRpQZ
+
+Unit Testing (CPPUTEST) with FreeRTOS on Raspberry Pi Pico
+https://youtu.be/_2-Mh3Kun6s?list=PLspDyukWAtRUsBERob2MD6axJWVHjRpQZ
+
+FreeRTOS Kernel V11 on Raspberry PI Pico - Comparing Performance
+https://youtu.be/rTf2A9OLWho?list=PLspDyukWAtRUsBERob2MD6axJWVHjRpQZ
+
+Using Flash as Non Volatile Storage on Raspberry PI Pico with FreeRTOS & SMP
+https://youtu.be/zmQJO2iW8r8?list=PLspDyukWAtRUsBERob2MD6axJWVHjRpQZ
+
+How to Hibernate the Raspberry Pi Pico in C/C++
+https://youtu.be/-E9UEFCTs4E?list=PLspDyukWAtRUsBERob2MD6axJWVHjRpQZ
+
+
+Pico Tutorials
+
+First Look at the Raspberry Pi Pico: Physical Overview
+https://youtu.be/GU5nynfizXI?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+How to Set Up Visual Studio Code to Program the Pi Pico (Windows)
+https://youtu.be/mUF9xjDtFfY?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+How to Set Up a Project in Visual Studio Code for the Pi Pico - Blink LED
+https://youtu.be/Q1Kfg8k54jM?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+Soldering Header Pins to your Raspberry Pi Pico
+https://youtu.be/R11QanPDccs?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+Getting Started with USB Serial Output on the Raspberry Pi Pico
+https://youtu.be/BjGc60Mmwz8?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+Getting Started with Multicore Programming on the Raspberry Pi Pico
+https://youtu.be/aIFElaK14V4?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+How to Use the Temperature Sensor on the Raspberry Pi Pico in C
+https://youtu.be/dsu-c6kSIe0?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+Beginners Guide to I2C on the Raspberry Pi Pico (BNO055 IMU Example)
+https://youtu.be/092xFEmAS98?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+USB Serial Input on the Raspberry Pi Pico
+https://youtu.be/NHwMJZwRo7k?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+
+Beginners Guide to SPI on the Raspberry Pi Pico (BMP280 Example)
+https://youtu.be/s7Lud1Gqrqw?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+How to Debug the Raspberry Pi Pico Using Another Pico
+https://youtu.be/0i2gLeBal9Y?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+Programming the Raspberry Pi Pico in the Arduino IDE!
+https://youtu.be/IZKpCz6LEdg?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+It's Official! Arduino IDE Support for the Raspberry Pi Pico - How to Install
+https://youtu.be/5YOEauk9bLo?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+FreeRTOS on the Raspberry Pi Pico (RP2040) Part 2: Tasks and Queues
+https://youtu.be/-fwJZzDpBIg?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+FreeRTOS on the Raspberry Pi Pico (RP2040) Part 3: Scheduling and Task Priorities
+https://youtu.be/S7c0B9Y1x-M?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+FreeRTOS on the Raspberry Pi Pico (RP2040) Part 4: Mutex
+https://youtu.be/WQM8bMvvs2c?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+
+FreeRTOS on the Raspberry Pi Pico (RP2040) Part 5: Semaphores
+https://youtu.be/0mqlPds5rkU?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+Raspberry Pi Pico W Simple Web Server C Tutorial – HTTP Server with SSI & CGI
+https://youtu.be/C_O0MXGBHsw?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+FreeRTOS SMP on the RP2040 Tutorial - Symmetric Multiprocessing with FreeRTOS
+https://youtu.be/sSjSquKBNkw?list=PLEB5F4gTNK68IlRIJtcJ_2cW4dSdmreTw
+
+
+
+
+Raspberry Pi Pico en C
+
+01 Hola Mundo | Programación Raspberry Pi Pico
+https://youtu.be/VNVjmshnf9c?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+02 Push Button con LED | Programación Raspberry Pi Pico
+https://youtu.be/85G1bCoSg6w?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+03 Toggle Push Button LED | Programación Raspberry Pi Pico
+https://youtu.be/_blZA9q2HhE?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+04 Buzzer | Programación Raspberry Pi Pico
+https://youtu.be/Uquhguvh34A?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+05 Barra de LED's | Programación Raspberry Pi Pico
+https://youtu.be/bV6JLTsFbtk?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+06 Barra de LED's | Contador Binario | Programación Raspberry Pi Pico
+https://youtu.be/fTy_VLT3rT8?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+07 ADC Potenciómetro | Programación Raspberry Pi Pico
+https://youtu.be/KYJqTYg8m-w?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+08 Módulo de sensor LDR (Fotoresitencia) | Dígital y Analógico | Programación Raspberry Pi Pico
+https://youtu.be/a62U0PyIY-s?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+09 Módulo LDR + LCD I2C | Lectura Analógica | Programación Raspberry Pi Pico
+https://youtu.be/YirFE1gZBhk?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+10 LCD Estandar | Programación Raspberry Pi Pico
+https://youtu.be/Xf78OFqwVOA?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+11 LCD Estandar | Caracteres Especiales | Programación Raspberry Pi Pico
+https://youtu.be/AE2Ykern9Hw?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+12 LCD Estandar | Corrimiento de Caracteres Especiales | Programación Raspberry Pi Pico
+https://youtu.be/P_aiCTm47M0?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+13 Videojuego Dino Chrome | LCD 16 x 2 Estandar | Programación Raspberry Pi Pico
+https://youtu.be/s1iu7gyHQ5k?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+14 Matriz de LED's 8 x 8 | Programación Raspberry Pi Pico
+https://youtu.be/zHPbKgNAgSo?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+15 Módulo de Relevador | Programación Raspberry Pi Pico
+https://youtu.be/LlQQS8YxlLo?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+16 LED RGB | Potenciómetros Slide ADC | Programación Raspberry Pi Pico
+https://youtu.be/aYbS4j2iaTo?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+17 Servomotor | Programación Raspberry Pi Pico
+https://youtu.be/2iyk7sXIBEI?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+18 Control directo de un motor a pasos bipolar | Programación Raspberry Pi Pico
+https://youtu.be/BnXsh7A_zYQ?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+19 Motor a pasos bipolar con librería Stepper.h | Programación Raspberry Pi Pico
+https://youtu.be/vGn6bTe_zUc?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+20 Motor a pasos bipolar controlado con el Driver A4988 | Programación Raspberry Pi Pico
+https://youtu.be/0c_sAE49G2Y?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+
+21 Acelerómetro MPU6050 por I2C | Programación Raspberry Pi Pico
+https://youtu.be/87lE1x9Xar0?list=PLTlmL5Wcs_T1mCLVI2m3TiVUTQrlnH4Do
+
+
+
+
+
+
+
+
