@@ -34,7 +34,7 @@
 	- RaspberryPi Pico W
 	- Componentes: bateria, display OLED 128x64 pixels, matriz de LEDs coloridos, microfone, joystick, botões, buzzer, conectores de expansão.
 
-![[bigdoglab.png]]
+![Figura 1](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo1/bigdoglab.png)
 	
 ### RaspberryPi Pico W
 
