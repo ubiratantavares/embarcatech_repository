@@ -46,7 +46,7 @@
 	- Porta de depuração SWD
 	- SDK simples de usar
 
-![[microcontrolador_RP2040.png]]
+![Figura 2](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo1/microcontrolador_RP2040.png)
 	
 ### RP2040
 
@@ -56,8 +56,7 @@
 * Fácil de usar
 * Recursos Avançados: Dual-Core, Rico conjunto de periféricos, programmableI/O
 
-![[rp2040.png]]
-
+![Figura 3](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo1/rp2040.png)
 
 * Dual CortexM0+, 133 MHz
 * 264kB SRAM
@@ -117,7 +116,7 @@
 		- Permite implementar protocolos de comunicação personalizados (como DVI ou WS2812 para LEDs) que não são suportados diretamente por hardware.
 		- Altamente configurável, pode gerar ou capturar sinais digitais de forma precisa, liberando os núcleos principais para outras tarefas.
 
-![[rp2040_diagram.png]]
+![Figura4](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo1/rp2040_diagram.png)
 
 ### Organização do SDK
 
