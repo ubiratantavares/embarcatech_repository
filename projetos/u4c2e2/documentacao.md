@@ -36,7 +36,7 @@ para manipular GPIOs.
 
 ## Montagem do Circuito
 
-[Circuito]()
+[Circuito](https://github.com/ubiratantavares/embarcatech_repository/blob/main/projetos/u4c2e2/circuito.png)
 
 ## Código
 
