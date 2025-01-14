@@ -24,7 +24,7 @@ Os materiais necessários para a realização deste projeto incluem:
 
 ## Montagem do Circuito
 
-[Circuito](https://github.com/ubiratantavares/embarcatech_repository/blob/main/projetos/u4c2e1/circuito.png)
+![Circuito](https://github.com/ubiratantavares/embarcatech_repository/blob/main/projetos/u4c2e1/circuito.png)
 
 ## Código
 
