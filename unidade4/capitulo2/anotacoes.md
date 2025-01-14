@@ -32,7 +32,7 @@
 		
 ### GPIOs - General Purpose Input/Outputs
 
-![[gpios.png]]
+![Figura 1](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo2/gpios.png)
 
 * Características
 
@@ -48,47 +48,47 @@
 
 	- Segue abaixo um guia de GPIO:
 
-![[tipos_pinos_gpios.png]]
+![Figura 2](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo2/tipos_pinos_gpios.png)
 
 ### RaspberryPi Pico
 
 * Explorando os GPIOs com BitDogLab
 
-![[componentes_pinos_gpios.png]]
+![Figura 3](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo2/componentes_pinos_gpios.png)
 
 * Efeito que ocorre ao pressionar o botão 1 vez: Importante entender antes de fazer as práticas.
 
-![[efeito_bounce.png]]
+![Figura 4](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo2/efeito_bounce.png)
 
 ### Detalhando os Exercícios Práticos
 
 #### Exemplo 1: Controle de LED e Leitura de Botão
 
-![[exemplo1.png]]
+![Figura 5](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo2/exemplo1.png)
 
 #### Exemplo 2: Controle de LEDs RGB e Leitura de Dois Botões
 
-![[exemplo2_1.png]]
+![Figura 6](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo2/exemplo2_1.png)
 
-![[exemplo2_2.png]]
+![Figura 7](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo2/exemplo2_2.png)
 
 #### Exemplo3: Leitura de Teclado Matricial
 
 * Teclado matricial
 
-![[exemlo3_1.png]]
+![Figura 8](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo2/exemplo3_1.png)
 
 * Leitura de uma tecla do teclado matricial
 
-![[exemplo3_2.png]]
+![Figura 9](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo2/exemplo3_2.png)
 
 * Teclado 4 x 4 conectado a um Raspberry Pi Pico W
 
-![[exemplo3_3.png]]
+![Figura 10](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo2/exemplo3_3.png)
 
 * Como conectar um teclado matricial a um Raspberry Pi Pico W
 
-![exemplo3_4.png]
+![Figura 11](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo2/exemplo3_4.png)
 
 * Código completo
 
