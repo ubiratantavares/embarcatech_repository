@@ -1,8 +1,6 @@
-# Unidade 4 - Microcontoladores
+# Capitulo 2 - Práticas de Portas de Entrada e Saída - GPIO
 
-## Capitulo 2 - Práticas de Portas de Entrada e Saída - GPIO
-
-### Sumário
+## Sumário
 
 * Revisão: Plataforma BitDogLab
 * GPIOs - General Purpose Input/Outputs
@@ -12,7 +10,7 @@
 	- Controle de LEDs RGB e Leitura de Dois Botões
 	- Leitura de Teclado Matricial
 
-### Revisão: Plataforma BitDogLab
+## Revisão: Plataforma BitDogLab
 
 * BitDogLab
 	- Componentes: 
@@ -25,7 +23,7 @@
 		- Buzzer
 		- Conectores de expansão
 		
-### GPIOs - General Purpose Input/Outputs
+## GPIOs - General Purpose Input/Outputs
 
 ![Figura 1](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo2/gpios.png)
 
@@ -42,7 +40,7 @@
 
 ![Figura 2](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo2/tipos_pinos_gpios.png)
 
-### RaspberryPi Pico
+## RaspberryPi Pico
 
 * Explorando os GPIOs com BitDogLab
 

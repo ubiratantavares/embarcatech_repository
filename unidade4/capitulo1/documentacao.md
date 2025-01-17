@@ -1,8 +1,6 @@
-# Unidade 4 - Microcontroladores
+# Capítulo 1 - Introdução ao Desenvolvimento de Software Embarcado com Microcontroladores
 
-## Capítulo 1 - Introdução ao Desenvolvimento de Software Embarcado com Microcontroladores
-
-### Sumário
+## Sumário
 
 * Objetivos
 * Introdução
@@ -12,13 +10,13 @@
 * Organização do SDK
 * Principais Pontos
 
-### Objetivos
+## Objetivos
 
 * Entender as características do desenvolvimento de software em microcontroladores
 * Conhecer e caracterizar a placa de desenvolvimento BitDogLab e seus componentes principais: CPU, memória, interfaces de entrada/saída.
 * Compreender a organização das bibliotecas de desenvolvimento do RaspberryPi Pico W.
 
-### Introdução
+## Introdução
 
 * Desenvolvimento em Microcontroladores
 	- Recursos limitados
@@ -26,7 +24,7 @@
 	- Controle pŕeciso de tempo: requisitos de tempo-real
 	- Interação com o mundo físico
 
-### Kit de Desenvolvimento
+## Kit de Desenvolvimento
 
 * BitDogLab
 	- Iniciativa do projeto escola 4.0: UNICAMP
@@ -36,7 +34,7 @@
 
 ![Figura 1](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo1/bigdoglab.png)
 	
-### RaspberryPi Pico W
+## RaspberryPi Pico W
 
 * Placa de microcontrolador
 	- Baseado no RP2040
@@ -48,7 +46,7 @@
 
 ![Figura 2](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo1/microcontrolador_RP2040.png)
 	
-### RP2040
+## RP2040
 
 * Primeiro MCU do RaspberryPi
 * Alta performance
@@ -118,7 +116,7 @@
 
 ![Figura4](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo1/rp2040_diagram.png)
 
-### Organização do SDK
+## Organização do SDK
 
 O SDK provê recursos para criar aplicações C/C++ e Assembly.
 
@@ -176,8 +174,7 @@ pico_add_extra_outputs(blink)
 	- Suporte ao Ambiente de Execução: setup e inicialização
 	- Hardware: hardware_xxx, suporte e registradores
 
-
-### Principais Pontos
+## Principais Pontos
 
 * Desenvolvimento em Microcontroladores: BitDogLab
 * Arquitetura e Recursos do RP2040: Dual-Core Cortex-M0+, 256 kB SRAM, periféricos e PIO

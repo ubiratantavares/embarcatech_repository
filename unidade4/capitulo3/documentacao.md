@@ -1,8 +1,6 @@
-## Unidade 4 - Microcontroladores
+# Capitulo 3 - Práticas de GPIO com delay
 
-## Capitulo 3 - Práticas de GPIO com delay
-
-### 1. Boas-Vindas e Introdução
+## 1. Boas-Vindas e Introdução
 
 Olá, estudante do EmbarcaTech! 
 
@@ -13,7 +11,7 @@ Com base nos conhecimentos adquiridos anteriormente sobre GPIOs, estamos prontos
 Nesta aula, você terá a oportunidade de aplicar a programação em C para realizar projetos práticos e desafiadores. Vamos aprender a controlar o tempo de execução de nossos programas
 para sincronizar e coordenar múltiplos dispositivos e ações. Vamos lá?
 
-### 2. Objetivos da Unidade
+## 2. Objetivos da Unidade
 
 Ao final desta aula, espera-se que você tenha desenvolvido a capacidade de utilizar técnicas de temporização (delay) em sistemas embarcados com o Raspberry Pi Pico[2] ou com a plataforma educacional BitDogLab[1], configurando e controlando de forma eficiente as portas de entrada e saída (GPIO) para interagir com diversos dispositivos eletrônicos. Você será capaz de implementar sistemas temporizados, como um semáforo controlado por push-button, e controlar displays de 7 segmentos [6,8], utilizando rotinas de atraso para gerenciar a exibição de números e informações.
 
@@ -24,7 +22,7 @@ Além disso, terá a habilidade de desenvolver aplicações mais complexas, como
 Essas práticas permitirão que você adquira habilidades fundamentais para a resolução de problemas recorrentes em sistemas embarcados, como a sincronização de tarefas e a otimização dos recursos do
 microcontrolador. Você estará apto a aplicar essas técnicas em projetos práticos, utilizando tanto o Raspberry Pi Pico quanto a BitDogLab, expandindo sua capacidade de criar soluções inovadoras e eficazes para os desafios reais no desenvolvimento de sistemas embarcados.
 
-### 3. Temporização (delay) em sistemas embarcados
+## 3. Temporização (delay) em sistemas embarcados
 
 Nos capítulos anteriores, exploramos os conceitos básicos e intermediários de manipulação de GPIOs, utilizando a plataforma educacional BitDogLab e o microcontrolador Raspberry Pi Pico.
 Aprendemos a configurar pinos como entradas e saídas digitais, e a interagir com componentes eletrônicos como LEDs e botões. 
@@ -52,7 +50,7 @@ Nesta seção, vamos analisar quatro exemplos práticos que ilustram o uso dos G
 
 ![Figura 1](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo3/exemplos.png)
 
-### 4. Síntese
+## 4. Síntese
 
 Nesta unidade, exploramos como utilizar técnicas de temporização (delay) em sistemas embarcados com o Raspberry Pi Pico ou com a plataforma educacional BitDogLab, aplicando-as em diversos
 exemplos práticos. Iniciamos com o controle de um semáforo temporizado, no qual aprendemos a usar delays para alternar entre três LEDs representando as fases do semáforo, e a utilizar um
@@ -81,7 +79,7 @@ Participar ativamente das discussões e colaborar com outros alunos é uma excel
 
 Estamos ansiosos para ver o que você é capaz de construir.
 
-## 5. Conclusão
+# 5. Conclusão
 
 Nesta unidade, exploramos a aplicação prática de técnicas de temporização com GPIOs, utilizando o Raspberry Pi Pico para desenvolver projetos que exigem controle preciso de tempo. Implementamos desde
 sistemas simples, como o controle de semáforo com push-button, até projetos mais complexos, como a multiplexação de displays de 7 segmentos e o desenvolvimento de um cofre digital com senha.
@@ -100,7 +98,7 @@ instantânea, sem depender de verificações constantes no código. Isso permiti
 O aprendizado contínuo é essencial. Continue se aprofundando nos temas abordados, participando de comunidades de desenvolvedores e experimentando novas técnicas e tecnologias. Estamos confiantes
 de que você está no caminho certo para se tornar um especialista em sistemas embarcados.
 
-## 6. Referências
+# 6. Referências
 
 [1] BITDOGLAB. BitDogLab. 
 Disponível em: https://github.com/BitDogLab/BitDogLab. Acesso em: 26 set. 2024.
