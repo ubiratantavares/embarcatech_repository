@@ -92,7 +92,7 @@
 	- a frequência do sinal de PWM é dada pela fórmula abaixo:
 
 $$
-f_{PWM} = \frac{f_{clock}{(divisor inteiro + \frac{divisor fracional}{16}) \times wrap}}
+f_{PWM} = \frac{f_{clock}}{(divisor inteiro + \frac{divisor fracional}{16}) \times wrap}
 $$
 
 Onde:
