@@ -19,7 +19,7 @@
 	* Técnica para controlar a potência entregue a dispositivos eletrônicos.
 	* Permite variar a largura de pulso mantendo uma frequêncioa constante: período e Duty Cycle.
 
-	![Figura 1]()
+	![Figura 1](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo7/figura1.png)
 
 	* Aplicações do PWM
 
@@ -33,7 +33,7 @@
 		- Fácil de implementar em microcontroladores.
 		- Precisão no controle.
 
-	![Figura 2]()
+	![Figura 2](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo7/figura2.png)
 
 ## PWM no RP2040
 
@@ -54,22 +54,22 @@
 		- Configuração do wrap (período) e level (Duty Cycle)
 		- Interrupção e DMA
 
-	![Figura 3]()
+	![Figura 3](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo7/figura3.png)
 
 	* Todos os 30 pinos de GPIO podem ser usados para PWM
 
-	![Figura 4]()
+	![Figura 4](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo7/figura4.png)
 
 	* Funcionamento do módulo PWM
 
 	 	- O circuito do PWM compara um contador livre de 16 bits com uma entrada: geração de um sinal
 	 de saída que fica alternando entre 0 e 1. O tempo em alto é proporcional ao valor da entrada.
 
-	 ![Figura 5]()
+	 ![Figura 5](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo7/figura5.png)
 
 	 	- No modo de ajuste de fase, o contador é crescente/decrescente: O centro do Duty Cicle é sempre o mesmo.
 
-	 ![Figura 6]()
+	 ![Figura 6](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo7/figura6.png)
 
 ## Configurações
 
@@ -145,49 +145,50 @@
 		 	# add the standard library to the build
 		 	target_link_libraries(PWM_LED_0 pico_stdlib hardware_pwm)
 
-		 ```C
-		 #include <stdio.h>
-		 #include "pico/stdlib.h"
-		 #include "hardware/pwm.h"
 
-		 const uint LED = 12; // pino do LED conectado
-		 const uint16_t PERIOD = 2000; // período do PWM (valor máximo do contador)
-		 const float DIVIDER_PWM = 16.0; // divisor fracional do clock para bo PWM
-		 const uint16_t LED_STEP = 100; // passo de incremento/decremento para o duty cycle do LED
-		 uint16_t led_level = 100; // nível inicial do PWM (duty cycle)
+```c
+#include <stdio.h>
+#include "pico/stdlib.h"
+#include "hardware/pwm.h"
 
-		 void setup_pwm() {
-			uint slice;
-			gpio_set_function(LED, GPIO_FUNC_PWM); // configura o pino do LED para função PWM
-			slice = pwm_gpio_to_slice_num(LED); // obtém o slice do PWM associado ao pino do LED
-			pwm_set_clkdiv(slice, divider_PWM); // define o divisor de clock do PWM 
-			pwm_set_wrap(slice, PERIOD); // configura o valor máximo do contador (período do PWM)
-			pwm_set_gpio_level(LED, led_level); // define o nível inicial do PWM para o pino do LED
-			pwm_set_enabled(slice, true); // habilita o PWM no slice correspondente
-		 } 
+const uint LED = 12; // pino do LED conectado
+const uint16_t PERIOD = 2000; // período do PWM (valor máximo do contador)
+const float DIVIDER_PWM = 16.0; // divisor fracional do clock para bo PWM
+const uint16_t LED_STEP = 100; // passo de incremento/decremento para o duty cycle do LED
+uint16_t led_level = 100; // nível inicial do PWM (duty cycle)
 
-		 int main {
-		 	uint up_down = 1; // variável para controlar se o nível do LED aumenta ou diminui
-		 	stdio_init_all(); // inicializa o sistema padrão de I/O
-		 	setup_pwm(); // configura o PWM
+void setup_pwm() {
+	uint slice;
+	gpio_set_function(LED, GPIO_FUNC_PWM); // configura o pino do LED para função PWM
+	slice = pwm_gpio_to_slice_num(LED); // obtém o slice do PWM associado ao pino do LED
+	pwm_set_clkdiv(slice, divider_PWM); // define o divisor de clock do PWM 
+	pwm_set_wrap(slice, PERIOD); // configura o valor máximo do contador (período do PWM)
+	pwm_set_gpio_level(LED, led_level); // define o nível inicial do PWM para o pino do LED
+	pwm_set_enabled(slice, true); // habilita o PWM no slice correspondente
+} 
 
-		 	while (true) {
-		 		pwm_set_gpio_level(LED, led_level); // define o nível atual do PWM (duty cycle)
-		 		sleep_ms(1000); // atraso de 1 segundo
-		 		if (up_down) {
-		 			led_level += LED_STEP; // incrementa o nivel do LED
-		 			if (led_level >= PERIOD) {
-		 				up_down = 0; // muda direção para diminuir quando atingir o período máximo
-		 			} else {
-		 				led_level -= LED_STEP; // decrementa o nível do LED
-		 				if (led_level <= LED_STEP) {
-		 					up_down = 1; // muda direção para aumentar quando atingir o mínimo
-		 				}
-		 			}
-		 		}
-		 	}	
-		 }
-		 ```
+int main {
+ 	uint up_down = 1; // variável para controlar se o nível do LED aumenta ou diminui
+ 	stdio_init_all(); // inicializa o sistema padrão de I/O
+ 	setup_pwm(); // configura o PWM
+
+ 	while (true) {
+ 		pwm_set_gpio_level(LED, led_level); // define o nível atual do PWM (duty cycle)
+ 		sleep_ms(1000); // atraso de 1 segundo
+ 		if (up_down) {
+ 			led_level += LED_STEP; // incrementa o nivel do LED
+ 			if (led_level >= PERIOD) {
+ 				up_down = 0; // muda direção para diminuir quando atingir o período máximo
+ 			} else {
+ 				led_level -= LED_STEP; // decrementa o nível do LED
+ 				if (led_level <= LED_STEP) {
+ 					up_down = 1; // muda direção para aumentar quando atingir o mínimo
+ 				}
+ 			}
+ 		}
+ 	}	
+}
+```
 
 ## Principais Pontos
 
