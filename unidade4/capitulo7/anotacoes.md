@@ -143,8 +143,10 @@ Onde:
 
 	 	* Faça a alteração abaixo, adicionando a biblioteca hardware_pwm
 
-	 	# add the standard library to the build
-	 	target_link_libraries(PWM_LED_0 pico_stdlib hardware_pwm)
+```text
+# add the standard library to the build
+target_link_libraries(PWM_LED_0 pico_stdlib hardware_pwm)
+```
 
 ```c
 #include <stdio.h>
