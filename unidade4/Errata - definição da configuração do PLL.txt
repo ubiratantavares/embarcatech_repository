@@ -1,0 +1,15 @@
+Errata - definição da configuração do PLL
+
+Está definido pll_init(pll_sys, 1, 1500 * MHZ, 6 * MHZ, 1); para gerar um clock de 125 MHz. 
+
+Esse comando na verdade geraria um clock de 250 MHz (1500 MHz/6). 
+
+A definição correta para atingir um clock de 125 MHZ a partir da frequência de referência de 1500 MHZ seria:
+
+pll_init(pll_sys, 1, 1500 * MHz, 6, 2); 
+
+(1500 MHz /6) /2 = 125 MHz
+
+Para mais informações consulte: https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf página 233
+
+

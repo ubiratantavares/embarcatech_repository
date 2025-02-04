@@ -25,13 +25,13 @@ Basta alterar o diagram.json para que o terminal (Serial Monitor) fique, por exe
 
 Assim, a UART usada pelo console não fica “contaminando” o teste de transmissão.
 
-![figura1.png]()
+![figura1.png](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo5/figura1.png)
 
-![figura2.png]()
+![figura2.png](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo5/figura2.png)
 
 4. Já para a comunicação I2C, utilize o DS1307, que é um Real Time Clock – RTC – disponível no simulador Wokwi. O endereço I2C do DS1307 é 0x68. Um RTC é um hardware que garante a contagem de tempo na unidade de segundos. Muitos microcontroladores possuem RTC internos, mas alguns fazem uso de hardwares externos. Para ler os valores, é necessário inicialmente configurar um valor de data e hora que deve, por exemplo, ser inserido manualmente pelo usuário. Nessa questão, você deverá configurar o RTC para 24/09/2024 –13:27:00 e, em seguida, realizar a leitura do mesmo a cada 5 segundos, imprimindo na tela do console (Serial USB) o valor lido. Na tabela a seguir, são apresentados os principais endereços do RTC DS1307.
 
-![figura3.png]()
+![figura3.png](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo5/figura3.png)
 
 Fonte: tabela elaborada pelo Prof. Pedro Henrique Almeida Miranda.
 
@@ -44,7 +44,7 @@ O Duty Cycle deve ser iniciado em 5% e atualizado a cada 2 segundos em increment
 
 Tente controlar frequência e o Duty Cycle do LED azul de forma independente do que fez nos LEDs vermelho e verde. Você consegue? Por que não? 
 
-![figura4.png]()
+![figura4.png](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo5/figura4.png)
 
 6. Refaça o Programa Prático 00 presente no Ebook do Capítulo de ADC (Capítulo 8), mas implementando no código a conversão da unidade de medida da temperatura de Celsius para Fahrenheit.
 A Tabela 1 mostra um lembrete das conexões de GPIO da placa BitDogLab.

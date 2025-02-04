@@ -1,0 +1,17 @@
+Item 3 da Tarefa 1 da Unidade 4 (Capitulo 5). 
+
+Segue o texto copiado a seguir:
+
+3. Elabore um código utilizando a interface UART0 e conecte os fios TX e RX atribuídos à essa interface aos da UART1 do mesmo microcontrolador (Raspberry Pi Pico). Essa estrutura envia e recebe dados na mesma interface, apenas para verificar seu funcionamento. Utilize a função “scanf” da biblioteca stdio para enviar, via console, um dado à placa. Em seguida, transmita da UART0 para a UART1 e, por fim, transmita o dado recebido para o console utilizando o “printf”.
+
+OBS: Quando usamos o printf (ou qualquer função de saída pelo stdio) para escrever no terminal via UART0, os bytes gerados por essa escrita também ficam no buffer de transmissão dessa mesma UART. Assim, se fisicamente conectarmos TX de UART0 ao RX da UART1, tudo que foi “impresso” anteriormente acaba sendo retransmitido logo que tentamos enviar outro dado.
+Como resolver?
+
+a) Limpar o buffer após cada printf ou função de escrita.
+Pode-se fazer um loop que “lê” tudo que ficou no buffer de saída, antes de transmitir o dado que realmente queremos.
+Ou, dependendo do caso, usar funções que limpem buffers internos do Pico, como fflush(stdout). Ainda assim, pode restar dado “em trânsito” na UART, então muitas vezes é preciso um “flush” manual em nível de hardware.
+
+b) Usar pinos (UART) diferentes para o console e para o teste de loopback (UART0 <-> UART1).
+Basta alterar o diagram.json para que o terminal (Serial Monitor) fique, por exemplo, na UART0 (GP0/GP1), enquanto o teste de loop (UART0 <-> UART1) é feito em outro par de pinos (por exemplo, GP4/GP5 para UART1, e GP8/GP9 para UART0, etc.).
+
+Assim, a UART usada pelo console não fica “contaminando” o teste de transmissão.

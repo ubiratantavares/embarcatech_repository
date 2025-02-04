@@ -1,0 +1,11 @@
+Errata - Código de Exemplo 2 - Capítulo 2
+
+No exemplo de código 2 do Cap. 2 do E-book, a configuração do push-button da BitDogLab está incorreta!
+
+No exemplo, é usada a função gpio_pull_down para ativar os resistores de pull-down dos botões da BitDogLab.
+Em vez desta função, é necessário usar a função gpio_pull_up, uma vez que os botões, quando pressionados, ligam os pinos de entrada GPIO5 e GPIO6 ao GND.
+
+Dessa forma, também é necessário inverter a lógica de verificação do pressionamento do botão:
+
+Se o pino do botão receber sinal lógico 1, o botão está solto.
+Se o pino do botão receber sinal lógico 0, o botão está pressionado.
