@@ -26,7 +26,7 @@
 
  - Microcontroladores só lidam com sinais digitais. Precisamos do ADC para tratar sensores analógicos.
 
-![figura 1]()
+![figura 1](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo8/figura1.png)
 
 * Princípios de Funcionamento
 
@@ -36,7 +36,7 @@
 
  - Codificação binária: mapeia os valores.
 
-![figura 2]()
+![figura 2](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo8/figura2.png)
 
 * Características Importantes
 
@@ -60,7 +60,7 @@
 
  - Interrupção/DMA: FIFO 8 amostras
 
- ![figura3]()
+ ![figura3](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo8/figura3.png)
 
 * Conversor SAR
 
@@ -74,7 +74,7 @@
 
  - Processo lento: leva 96 ciclos de clock para gerar os 12-bits. A precisão é baixa. Apenas os 9 bits mais significativos são precisos!
 
-![figura 4]()
+![figura 4](https://github.com/ubiratantavares/embarcatech_repository/blob/main/unidade4/capitulo8/figura4.png)
 
 ## Configurações
 
