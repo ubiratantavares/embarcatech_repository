@@ -1,63 +1,172 @@
-## Unidade 4 - Microcontoladores
+# Capítulo 8 - Conversores A/D
 
-### Capítulo 1 - Introdução ao Desenvolvimento de Software Embarcado com Microcontroladores
+## Objetivos
 
-* Arquivo "02.37M2-U4C0OIG-Guia da Unidade"- 05/01/2025 - Introdução ao Desenvolvimento de Software Embarcado com Microcontroladores
+* Entender o processo de conversão A/D
 
-* Arquivo "04.37M2-U4C1O123S-Slide" - 05/01/2025  - Introdução ao Desenvolvimento de Software Embarcado com Microcontroladores
+* Compreender o funcionamento do módulo A/D
 
-* Vídeo Aula - Introdução ao Desenvolvimento de Software Embarcado com Microcontroladores
+* Conhecer os diferentes modos de configuração do módulo conversor A/D
 
-### Capitulo 2 - Práticas de Portas de Entrada e Saída - GPIO
+* Configurar e implementar o uso do módulo A/D, inclusive em conjunto com o módulo PWM
 
-* Arquivo "5.37M2-U4C212E-Ebook" - 09/01/2025 - Práticas de Portas de Entrada e Saída - GPIO
+## Revisão
 
-* Arquivo "07.37M2-U4C2O123S-Slide" - 09/01/2025 - Práticas de Portas de Entrada e Saída - GPIO
+* Usar e configurar o clock e temporizadores
 
-* Vídeo Aula - Práticas de Portas de Entrada e Saída - GPIO
+* A utilizar as interfaces de comunicação serial
 
-### Capitulo 3 - Práticas de GPIO com delay
+* A configurar e aplicar o módulo PWM
 
-* Arquivo "09.37M2-U4C3O1234E-Ebook" - 13/01/2025 - Práticas de GPIO com delay
+## Visão Geral 
 
-### Capitulo 4 - Interrupções
+* O que é um conversor analógico-digital (ADC)?
 
-* Arquivo "11.37M2-U4C4O123S-Slide" -  17/01/2025  - Interrupções
+ - Dispositivo que converter sinais analógicos (variáveis contínuas) em sinais digitais (variáveis discretas).
 
-* Vídeo Aula - Interrupções
+ - Microcontroladores só lidam com sinais digitais. Precisamos do ADC para tratar sensores analógicos.
 
-### Capitulo 5 - Clock e Interruptores
+![figura 1]()
 
-* Arquivo "15.37M2-U4C5O1234E-Ebook" - 21/01/2025 - Clock e Interruptores
+* Princípios de Funcionamento
 
-* Arquivo "16.37M2-U4C5O123S-Slide" - 21/01/2025 - Clock e Interruptores
+ - Amostragem: processo no qual o ADC lê o sinal analógico em períodos pré-definidos. Quanto maior a frequência de amostragem, mais preciso é a representação do sinal.
 
-* Vídeo Aula - Clock e Temporizadores
+ - Quantização: aproxima (arredonda) o valor para um valor digital discreto. Erro de quantização. Quanto maior a resolução mais níveis de quantização.
 
-* Tarefa 1 - Unidade 4 - Cap. 5
+ - Codificação binária: mapeia os valores.
 
-### Capitulo 6 - Guia de Interfaces de Comunicação com RP2040 / Raspberry Pi Pico W
+![figura 2]()
 
-* Arquivo "18.37M2-U4C6O12E-Ebook" - 26/01/2025 - Guia de Interfaces de Comunicação com RP2040 / Raspberry Pi Pico W
+* Características Importantes
 
-* Arquivo "19.37M2-U4C6O12S-Slide" - 26/01/2025 - Guia de Interfaces de Comunicação com RP2040 / Raspberry Pi Pico W
+ - Resolução: define a precisão do ADC: 8 bits, 10 bits, 12 bits, dentre outras.
 
-* Vídeo Aula - Raspberry Pi Pico W/RP2040 - Interfaces de Comunicação UART, SPI e I2C
+ - Taxa de amostragem: quantas amostras podem ser feitas. Medida em sps (samples per second)
 
-### Capitulo 7 - Modulação por Largura de Pulso (PWM)
+ - Tensão de referência: intervalo de tensões que o ADC pode medir.
 
-* Arquivo "21.37M2-U4C7O12E-Ebook"- 31/01/2025 - Modulação por Largura de Pulso (PWM)
+## ADC no RP2040
 
-* Arquivo "22.37M2-U4C7O123S-Slide"- 31/01/2025 - Modulação por Largura de Pulso (PWM)
+* O RP2040 tem um ADC interno
 
-* Vídeo Aula - PWM
+ - Conversão por aproximações sucessivas.
 
-### Capítulo 8 - Conversores A/D
+ - 500 ksps (amostras por segundo) com clock de 48 MHz
 
-* Arquivo "24.37M2-44C8O123E-Ebook" - 05/02/2025 - Conversores A/D
+ - Resolução de 12 bits
 
-* Arquivo "25.37M2-U4C8O1234S-Slide" - 05/02/2025 - Conversores A/D
+ - Cinco entradas: 4 pinos externos (GP26-GP29) e 1 sensor de temperatura
 
-* Vídeo Aula - Conversores A/D
+ - Interrupção/DMA: FIFO 8 amostras
 
-* Quizz "37M2 – U4C1234OQ"
+ ![figura3]()
+
+* Conversor SAR
+
+ - O processo de conversão é feito por aproximações sucessivas.
+
+ - Um conversor digital-analógico (DAC) gera valores analógicos que são comparados ao valor amostrado.
+
+ - Um comparador determina se o valor gerado pelo DAC é maior (1) ou menor (0) que o valor amostrado.
+
+ - O processo se repete com o DAC gerando valores anaógicos que são frações da tensão de referência.
+
+ - Processo lento: leva 96 ciclos de clock para gerar os 12-bits. A precisão é baixa. Apenas os 9 bits mais significativos são precisos!
+
+![figura 4]()
+
+## Configurações
+
+* o ADC possui dois modos de funcionamento.
+
+ - One-Shot: realiza uma única conversão por vez. É preciso. 
+
+ 	- Inicializar o módulo ADC - adc_init()
+ 	- Configurar GPIO com entrada analógica - adc_gpio_init(gpio)
+ 	- Selecionar a entrada analógica - adc_select_inoput(channel)
+ 	- Realizar a conversão - v =  adc_read()
+
+ - Free-Running
+
+ 	- Inicia novas conversões de forma automática.
+ 	- Amostra de forma sequencial as entradas analógicas pré-selecionadas.
+ 	- Armazena em uma FIFO de oito entradas.
+ 	- Integração com o DMA.
+
+## Exemplos
+
+* Leitura de entrada ADC
+
+ - Vamos fazer a leitura do Joystick da BitDogLab. O Joystick gera dois sinais analógicos que representam os eixos X e Y. O GP26 (canal analógico 0)
+VRX e GP27 (canal analógico 1) VRY. Há ainda uma entrada digital que representa se o controle foi pressionado GP22. Nesse exemplo,
+iremos ler as três entradas e usar o console serial para mostrar os seus valores.
+
+ - Crie o projeto no VS Code com auxilio do plugin do Pi Pico.
+
+ - Faça a alteração abaixo no CMakeLists.txt: adicionar a biblioteca hardware_adc e configurar o console pela USB
+
+```text
+# modify the below lines to enable/disable output over UART/USB
+pico_enable_stdio_uart(joystick 0)
+pico_enable_stdio_usb(joystick 1)
+
+target_link_libraries(joystick pico_stdlib hardware_adc)
+
+pico_add_extra_outputs(joystick)
+```
+
+```C
+#include <stdio.h>
+#include "hardware/adc.h"
+#include "pico/stdlib.h"
+
+const int VRX = 26;
+const int VRY = 27;
+const int ADC_CHANNEL_0 = 0;
+conts int ADC_CHANNEL_1 = 1;
+const int SW = 22;
+
+void setup() {
+	// initialize chosen serial port
+	stdio_init_all();
+	adc_init();
+	adc_gpio_init(VRX);
+	adc_gpio_init(VRY);
+	gpio_init(SW);
+	gpio_set_dir(SW, GPIO_IN);
+	gpio_pull_up(SW);	
+}
+
+int main() {
+	uint16_t vrx_value, vry_value, sw_value;
+	setup();
+	printf("Joystick\n");
+	while (1) {
+		adc_select_input(ADC_CHANNEL_0);
+		sleep_us(2);
+		vrx_value = adc_read();
+		adc_select_input(ADC_CHANNEL_1);
+		sleep_us(2);
+		vry_value = adc_read();
+		sw_value = !gpio_get(SW);
+		printf("X: %u, Y: %u, Botão: %d\n", vrx_value, vry_value, sw_value);
+		sleep_ms(10000);
+	}
+}
+```
+
+* Controle de Intensidade dos LEDs com o JoyStick
+
+slides 16-24
+
+
+## Principais Pontos
+
+* o ADC é um dispositivo que na interface do mundo analógico com o mundo digital.
+
+* Um ADC possui várias características como resolução, taxa de amostragem, tensão referencial.
+
+* O RP2040 possui um ADC interno do tipo SAR: 12 bits de resolução. 500 ksps.
+
+* Aprendemos como usar o SDK para criar aplicações que usam o ADC e outros módulos como o PWM.
